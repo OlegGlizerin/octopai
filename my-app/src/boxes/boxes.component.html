@@ -1,0 +1,60 @@
+<div>
+  <div class="box-container">
+    <div class="the-box background-color-{{ box1Color }}">
+      <div class="inner">
+        comp main works!
+        <mat-form-field appearance="fill">
+          <div class="options-container">
+            <select
+              (change)="getSelectedValue($event)"
+              matNativeControl
+              required
+              name="box1"
+            >
+              <option value="coral">coral</option>
+              <option value="cyan">cyan</option>
+              <option value="yellow">yellow</option>
+            </select>
+          </div>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="multiple-boxes">
+      <div class="the-box background-color-{{ box2Color }}">
+        comp a works!<mat-form-field appearance="fill">
+          <div class="options-container">
+            <select
+              (change)="getSelectedValue($event)"
+              matNativeControl
+              required
+              name="box2"
+            >
+              <option value="coral">coral</option>
+              <option value="cyan">cyan</option>
+              <option value="yellow">yellow</option>
+            </select>
+          </div>
+        </mat-form-field>
+      </div>
+      <div class="the-box border-color-red background-color-{{ box3Color }}">
+        <div class="inner">
+          comp b works!
+          <mat-form-field appearance="fill">
+            <div class="options-container">
+              <select
+                (change)="getSelectedValue($event)"
+                matNativeControl
+                required
+                name="box3"
+              >
+                <option value="coral">coral</option>
+                <option value="cyan">cyan</option>
+                <option value="yellow">yellow</option>
+              </select>
+            </div>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
